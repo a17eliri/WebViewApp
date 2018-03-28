@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 public class MainActivity extends AppCompatActivity {
     // Create a private member variable that can hold our WebView
@@ -22,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         // 1. Create a WebView element in the layout file content_main.xml
         // 2. Give the WebView element created in step 1 ID "my_webview"
         // Enter your code that creates your WebView here...
@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         // 4. Create a new WebViewClient to attach to our WebView. This allows us to
         //    browse the web inside our app.
         // 5. Enter the url to load in our WebView
+
+        WebView webView = new WebView(this);
+        setContentView(webView);
+
+        webView.loadUrl("http://www.howrse.com/");
     }
 
     @Override
