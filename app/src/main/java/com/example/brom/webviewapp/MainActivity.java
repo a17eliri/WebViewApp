@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         //    browse the web inside our app.
         // 5. Enter the url to load in our WebView
 
-        WebView webView = new WebView(this);
+        WebView webView = (WebView) findViewById(R.id.webbfonster);
         setContentView(webView);
 
         webView.loadUrl("http://www.howrse.com/");
