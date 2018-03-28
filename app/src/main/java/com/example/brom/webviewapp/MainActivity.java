@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
     // Create a private member variable that can hold our WebView
@@ -32,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
         // 5. Enter the url to load in our WebView
 
         WebView webView = (WebView) findViewById(R.id.webbfonster);
-        setContentView(webView);
+        WebViewClient blubb = new WebViewClient();
+        webView.setWebViewClient(blubb);
 
-        webView.loadUrl("http://www.howrse.com/");
+        webView.loadUrl("http://m.howrse.com/");
     }
 
     @Override
