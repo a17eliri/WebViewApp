@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         WebViewClient blubb = new WebViewClient();
         webView.setWebViewClient(blubb);
 
-        // webView.loadUrl("http://m.howrse.com/");
+        webView.loadUrl("http://m.howrse.com/");
 
-        webView.loadUrl("file:///android_asset/about.html");
+        //webView.loadUrl("file:///android_asset/about.html");
     }
 
     @Override
